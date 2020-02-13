@@ -1,10 +1,15 @@
-import React from 'react';
-import { View } from 'react-native';
+import React from 'react'
+import { View, Text } from 'react-native'
+import { WebView } from 'react-native-webview'
 
-// import { Container } from './styles';
+export default function Profile( { route } ) {
 
-export default function Profile() {
+  const { github_username } = route.params
+
   return (
-    <View />
-  );
+    
+    <View>
+      <Text>Profile</Text>
+    </View>
+  )
 }
